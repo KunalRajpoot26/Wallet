@@ -1,0 +1,7 @@
+service : {
+  init: ();                           // Initialization method.
+  mint: (account_id: text, amount: nat64) -> ();
+  transfer: (from: text, to: text, amount: nat64) -> (result: variant { Ok; Err: text });
+  balance_of: (account_id: text) -> (nat64);
+  total_supply: () -> (nat64);
+}

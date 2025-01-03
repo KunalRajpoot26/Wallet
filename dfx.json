@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "icrc_backend": {
+      "candid": "src/icrc_backend/icrc_backend.did",
+      "package": "icrc_backend",
+      "type": "rust"
+    },
+    "icrc_frontend": {
+      "dependencies": [
+        "icrc_backend"
+      ],
+      "source": [
+        "src/icrc_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "icrc_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
