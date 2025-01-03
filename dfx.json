@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "icrc_backend": {
-      "candid": "src/icrc_backend/icrc_backend.did",
-      "package": "icrc_backend",
+    "wallet_backend": {
+      "candid": "src/wallet_backend/wallet_backend.did",
+      "package": "wallet_backend",
       "type": "rust"
     },
-    "icrc_frontend": {
+    "wallet_frontend": {
       "dependencies": [
-        "icrc_backend"
+        "wallet_backend"
       ],
       "source": [
-        "src/icrc_frontend/dist"
+        "src/wallet_frontend/dist"
       ],
       "type": "assets",
-      "workspace": "icrc_frontend"
+      "workspace": "wallet_frontend"
     }
   },
   "defaults": {

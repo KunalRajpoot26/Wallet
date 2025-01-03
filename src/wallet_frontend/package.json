@@ -1,10 +1,10 @@
 {
-  "name": "icrc_frontend",
+  "name": "wallet_frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "setup": "npm i && dfx canister create icrc_backend && dfx generate icrc_backend && dfx deploy",
+    "setup": "npm i && dfx canister create wallet_backend && dfx generate wallet_backend && dfx deploy",
     "start": "vite --port 3000",
     "prebuild": "dfx generate",
     "build": "tsc && vite build",

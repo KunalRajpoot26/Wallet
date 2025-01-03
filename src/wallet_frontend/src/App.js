@@ -1,5 +1,5 @@
 import { html, render } from 'lit-html';
-import { icrc_backend } from 'declarations/icrc_backend';
+import { wallet_backend } from 'declarations/wallet_backend';
 import logo from './logo2.svg';
 
 class App {
@@ -12,7 +12,7 @@ class App {
   #handleSubmit = async (e) => {
     e.preventDefault();
     const name = document.getElementById('name').value;
-    this.greeting = await icrc_backend.greet(name);
+    this.greeting = await wallet_backend.greet(name);
     this.#render();
   };
 
